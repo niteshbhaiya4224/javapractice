@@ -3,7 +3,7 @@ package Java;
 public class DataTypes {
 
     public static void main(String[] args) {
-
+        byte b = 23;
         int id = 1003;
         long phoneNumber = 9142416282L;
 
@@ -40,6 +40,9 @@ There are two types of datatypes
 2. Non Primitive -- Create objects --> String, Array
 
 
+// Scope of datatype 
+
+Private , Public , Default, Protected
 
 
 */
