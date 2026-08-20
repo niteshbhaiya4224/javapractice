@@ -9,8 +9,9 @@ public class Conditional {
 
             boolean willJohnPlay = false;
             boolean isRaining = false;
+            boolean isHomeworkDone = true;
 
-            if(!isRaining && willJohnPlay){
+            if(!isRaining && isHomeworkDone){
                 System.out.println("John can play outside.");
             }
             else{
