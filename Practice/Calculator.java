@@ -28,7 +28,7 @@ public class Calculator {
             System.out.println(num1/num2);
         }
         else if(op.equals("%")){
-            System.out.println(num1%num2);
+            System.out.println((num1/100)*num2);
         }
         else{
             System.out.println("invalid");
