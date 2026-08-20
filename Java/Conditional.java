@@ -10,8 +10,13 @@ public class Conditional {
             boolean willJohnPlay = false;
             boolean isRaining = false;
 
-            // if(){
-                
+            if(!isRaining && willJohnPlay){
+                System.out.println("John can play outside.");
+            }
+            else{
+                System.out.println("John cannot play outside.");
+            }
+            
             // }
             // else if(){
 
