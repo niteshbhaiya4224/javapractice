@@ -18,7 +18,7 @@ public class rps {
         computer = "Rock";
     }
      else if(num==1){
-        computer = " Paper";
+        computer = "Paper";
     }
      else{
         computer = "Scissors";
