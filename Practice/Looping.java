@@ -30,7 +30,7 @@ public class Looping {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Enter number");
-        long num = scan.nextInt();
+        long num = scan.nextLong();
         int count = 0;
 
         if (num == 0) {
