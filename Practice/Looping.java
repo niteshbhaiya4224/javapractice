@@ -1,4 +1,5 @@
 package Practice;
+import java.util.Scanner;
 
 public class Looping {
     public static void main(String[] args) {
@@ -25,6 +26,26 @@ public class Looping {
 
 
         // You have to take a number - 541237 you have to print the total number of digit i.e 6
-        
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Enter number");
+        int num = scan.nextInt();
+        int count = 0;
+       
+        if(num == 0){
+            count = 1;
+        }else{
+            for(int i = num; i != 0; i =i/10){
+            count++;
+            }
+        }
+        System.out.println(count);
     }
 }
+
+
+     
+
+    
+
+    
