@@ -24,24 +24,26 @@ public class EnemyvsYou {
                 int yourHealth = 100;
                 int enemyHealth = 100;
                 int perHit = 10;
-                
+                int round = 0;
                 while(yourHealth > 0 && enemyHealth > 0){
-                        int yourHits = random.nextInt(4);
+                    round++;
+                    System.out.println("Round : " +round);
+                        int yourHits = random.nextInt(1,4);
                         int yourDamage = yourHits * perHit;
                         enemyHealth = enemyHealth - yourDamage;
 
                         if(enemyHealth <0){
                                 enemyHealth = 0;
                         }
-                        System.out.println("Hits: "+ yourHits);
-                        System.out.println("Enemy Health: "+ enemyHealth);
+                        System.out.println("Your Hits: "+ yourHits);
+                        System.out.println("Enemy remaining Health: "+ enemyHealth);
 
                         if(enemyHealth == 0){
                                 System.out.println("you win");
                                 break;
                         }
 
-                        int enemyHits = random.nextInt(4);
+                        int enemyHits = random.nextInt(1,4);
                         int enemyDamage = enemyHits * perHit;
                         yourHealth = yourHealth - enemyDamage;
 
@@ -49,7 +51,7 @@ public class EnemyvsYou {
                                 yourHealth=0;
                         }
                         System.out.println("Enemy hit you: "+ enemyHits);
-                        System.out.println(yourHealth);
+                        System.out.println("Your Remaining health : "+ yourHealth);
 
                         if(yourHealth == 0){
                                 System.out.println("Enemy wins");
