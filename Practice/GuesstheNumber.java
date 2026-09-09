@@ -11,7 +11,7 @@ public class GuesstheNumber {
     Scanner scan = new Scanner(System.in);
     Random random = new Random();
 
-    int num = random.nextInt(100)+ 1;
+    int num = random.nextInt(1,101);
     int guess = 0;
     int tries = 0;
 
@@ -20,8 +20,7 @@ public class GuesstheNumber {
         guess = scan.nextInt();
         
         tries++;
-
-
+        
         if(guess < num){
             System.out.println("too low");
         }
